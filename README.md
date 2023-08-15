@@ -1,6 +1,8 @@
 # CONF_2023_08_NPCW24
 
-This notebook show ion exchange chromatography in laboratory scale.  The model describes separation 
+This notebook goes through the examples presented at NPCW 24 in Trondheim, Norway, August 17-18, 2023.
+
+The ion exchange chromatography is here run in laboratory scale. The model describes separation 
 of two proteins, desired product P and an antagonist A. The simulation goes through the differents
 steps: equlibration, sample-adsorption, washing 1, desorption, washing 2, and finally equlibration and preparation
 for the next batch. Simulation is done using an FMU from Bioprocess Library *for* Modelica. Below a diagramwith a typical 
