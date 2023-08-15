@@ -1,4 +1,4 @@
-# BPL_IEC_operation
+# CONF_2023_08_NPCW24
 
 This notebook show ion exchange chromatography in laboratory scale.  The model describes separation 
 of two proteins, desired product P and an antagonist A. The simulation goes through the differents
@@ -14,9 +14,9 @@ You see in the diagram typical resuts during operation.
 * The following four diagrams with green curves show the following flow rates: flow of sample, flow of adsorptioin buffer, flow of desorption buffer and finally the volume of the harvested material.
 
 You start up the notebook in Colab by pressing here
-[start BPL notebook](https://colab.research.google.com/github/janpeter19/BPL_IEC_operation/blob/main/BPL_IEC_operation_colab.ipynb)
+[start BPL notebook](https://colab.research.google.com/github/janpeter19/CONF_2023_08_NPCW24/blob/main/BPL_IEC_operation_colab.ipynb)
 or alternatively (experimentally)
-[start BPL notebook with FMPy](https://github.com/janpeter19/BPL_IEC_operation/blob/main/BPL_IEC_operation_fmpy_colab.ipynb).
+[start BPL notebook with FMPy](https://github.com/janpeter19/CONF_2023_08_NPCW24/blob/main/BPL_IEC_operation_fmpy_colab.ipynb).
 Then you in the menu choose Runtime/Run all. The installation of software on the remote Google server takes a few minutes. The subsequent execution of the simulations of IEC operation take just a seconds or so. 
 
 You can continue in the notebook and make new simulations and follow the examples given. Here are many things to explore!
