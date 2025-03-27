@@ -79,11 +79,6 @@ if platform.system() == 'Linux': locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 #  Setup application FMU
 #------------------------------------------------------------------------------------------------------------------
 
-# Define model file name and class name 
-#model_name = 'BPL_IEC.Column' 
-#model_file = 'BPL_IEC.mo'
-#library_file = 'z:/BPL/package.mo'
-
 # Provde the right FMU and load for different platforms in user dialogue:
 global fmu_model, model, opts
 if platform.system() == 'Windows':
@@ -92,10 +87,7 @@ if platform.system() == 'Windows':
    model = load_fmu(fmu_model, log_level=0)
    flag_vendor = 'JM'
    flag_type = 'CS'
-elif platform.system() == 'Linux':
-#   flag_vendor = input('Linux - run FMU from JModelica (JM) or OpenModelica (OM)?')  
-#   flag_type = input('Linux - run FMU-CS (CS) or ME (ME)?')  
-#   print()   
+elif platform.system() == 'Linux': 
    flag_vendor = 'OM'
    flag_type = 'ME'
    if flag_vendor in ['','JM','jm']:    
@@ -103,7 +95,7 @@ elif platform.system() == 'Linux':
       fmu_model ='BPL_IEC_Column_system_linux_jm_cs.fmu'      
       model = load_fmu(fmu_model, log_level=0)
    if flag_vendor in ['OM','om']:
-      print('Linux - run FMU pre-comiled OpenModelica 1.21.0') 
+      print('Linux - run FMU pre-compiled OpenModelica') 
       if flag_type in ['CS','cs']:         
          fmu_model ='BPL_IEC_Column_system_linux_om_cs.fmu'    
          model = load_fmu(fmu_model, log_level=0)
